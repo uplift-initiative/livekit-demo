@@ -1,15 +1,11 @@
 # LiveKit Agent dependencies
-livekit-agents==1.2.8
-livekit==1.0.12
-livekit-api==1.0.5
-livekit-protocol==1.0.5
+livekit-agents==1.5.1
 
 # LiveKit plugins
-livekit-plugins-openai==1.2.8
-livekit-plugins-noise-cancellation==0.2.5
-livekit-plugins-turn-detector==1.2.8
-livekit-plugins-upliftai==1.2.8
-livekit-plugins-silero==1.2.8
+livekit-plugins-openai==1.5.1
+livekit-plugins-turn-detector==1.5.1
+livekit-plugins-upliftai==1.5.1
+livekit-plugins-silero==1.5.1
 
 # Socket.IO TTS dependencies
 python-socketio[asyncio]>=5.11.0

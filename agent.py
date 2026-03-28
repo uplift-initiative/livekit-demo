@@ -5,7 +5,6 @@ from livekit import agents
 from livekit.agents import AgentSession, Agent, RoomInputOptions
 from livekit.plugins import (
     openai,
-    noise_cancellation,
     upliftai,
     silero,
 )
@@ -54,12 +53,7 @@ async def entrypoint(ctx: agents.JobContext):
     await session.start(
         room=ctx.room,
         agent=Assistant(),
-        room_input_options=RoomInputOptions(
-            # LiveKit Cloud enhanced noise cancellation
-            # - If self-hosting, omit this parameter
-            # - For telephony applications, use `BVCTelephony` for best results
-            # noise_cancellation=noise_cancellation.BVC(), 
-        ),
+        room_input_options=RoomInputOptions(),
     )
 
     await session.generate_reply(
